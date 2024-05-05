@@ -58,7 +58,7 @@ const CursorChat = ({ cursor, cursorState, setCursorState, updateMyPresence }: C
               autoFocus={true}
               onChange={handleChange}
               onKeyDown={handleKeyDown}
-              placeholder={cursorState.previousMessage ? "" : "Say something…"}
+              placeholder={cursorState.previousMessage ? "" : "Dites quelque chose"}
               value={cursorState.message}
               maxLength={50}
             />
