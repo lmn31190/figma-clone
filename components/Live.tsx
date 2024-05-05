@@ -51,8 +51,8 @@ const Live = () => {
     };
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "/") {
+        e.preventDefault();
       }
-      e.preventDefault();
     };
 
     window.addEventListener("keyup", onKeyUp);
@@ -60,8 +60,8 @@ const Live = () => {
 
     return () => {
       window.removeEventListener("keyup", onKeyUp);
-    window.removeEventListener("keydown", onKeyDown);
-    }
+      window.removeEventListener("keydown", onKeyDown);
+    };
   }, [updateMyPresence]);
 
   return (

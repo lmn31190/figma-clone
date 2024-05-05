@@ -33,7 +33,7 @@ const CursorChat = ({ cursor, cursorState, setCursorState, updateMyPresence }: C
         transform: `translateX(${cursor.x}px) translateY(${cursor.y}px)`,
       }}
     >
-      {/* {cursorState.mode === CursorMode.Chat && ( */}
+      {cursorState.mode === CursorMode.Chat && (
         <>
           <CursorSVG color="#000" />
           <div className="absolute left-2 top-5 bg-blue-500 px-4 py-2 text-sm leading-relaxed text-white rounded-[20px]">
@@ -51,7 +51,7 @@ const CursorChat = ({ cursor, cursorState, setCursorState, updateMyPresence }: C
             />
           </div>
         </>
-      {/* )} */}
+      )} 
     </div>
   );
 };
